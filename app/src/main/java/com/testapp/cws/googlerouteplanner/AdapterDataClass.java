@@ -9,7 +9,6 @@ import java.util.ArrayList;
  */
 
 public class AdapterDataClass {
-    /////ajaya commited nbhghghghhgghgh
     public static ArrayList<LatLng> arrayList;
     public static ArrayList<String> step_array;
     public static ArrayList<String> html_array;
