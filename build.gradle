@@ -1,5 +1,5 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-
+//https://stackoverflow.com/questions/26979914/how-to-add-android-project-to-github
 buildscript {
     repositories {
         jcenter()
