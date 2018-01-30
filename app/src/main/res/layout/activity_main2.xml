@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bc__"
+    android:scrollbars="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="com.testapp.cws.googlerouteplanner.Main2Activity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Possible Routes"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="@dimen/route_title_text_size"
+            android:textStyle="bold"
+            android:id="@+id/tittlemain"/>
+           <android.support.v7.widget.RecyclerView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerview"
+            android:layout_below="@+id/tittlemain"
+            android:layout_marginTop="10dp"
+            android:elevation="@dimen/activity_horizontal_margin"
+
+            ></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
+    </ScrollView>

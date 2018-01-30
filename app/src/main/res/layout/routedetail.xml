@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/route_detail_layout_height"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="@dimen/route_detail_imageview_height"
+        android:layout_height="@dimen/route_detail_imageview_height"
+        android:id="@+id/image"
+        android:scaleType="centerInside"
+        android:background="@drawable/driveicon"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:layout_width="@dimen/route_detail_via_textview_width"
+        android:layout_height="@dimen/route_detail_via_textview_height"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/image"
+        android:textColor="#000000"
+        android:layout_marginLeft="@dimen/route_detail_via_leftmargin"
+        android:textSize="@dimen/recyclerview_text_size"
+        android:text="Via"
+        android:textStyle="bold"
+        android:id="@+id/textview_via"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/route_detail_via_textview_height"
+        android:layout_below="@+id/image"
+        android:id="@+id/textview_time"
+        android:textSize="@dimen/recyclerview_text_size"
+        android:text="time"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textview_via" />
+
+    <TextView
+        android:layout_width="@dimen/route_detail_via_textview_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_description"
+        android:textSize="@dimen/recyclerview_text_size"
+        android:text="Distance"
+        android:textColor="#000000"
+        android:layout_marginLeft="@dimen/route_detail_via_leftmargin"
+        android:textStyle="bold"
+        android:layout_below="@+id/textview_via"
+        android:layout_toRightOf="@+id/image"
+        android:layout_toEndOf="@+id/image" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_time"
+        android:id="@+id/textview_distance"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textSize="@dimen/recyclerview_text_size"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:text="Distance"
+        android:layout_toRightOf="@+id/textview_via"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>
